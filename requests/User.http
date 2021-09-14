@@ -1,0 +1,30 @@
+### GET USERS
+GET http://localhost:3010/api/user
+
+### GET USER
+GET http://localhost:3010/api/user/1
+
+### DELETE USER
+DELETE http://localhost:3010/api/user/1
+
+### ADD USER
+POST http://localhost:3010/api/user
+content-type: application/json
+
+{
+  "name": "Rogerio Flausino",
+  "homeTeam": "Curintia",
+  "age": "28",
+  "height": "1.95",
+  "username": "admin",
+  "password": "admin123"
+}
+
+### UPDATE USER
+PUT http://localhost:3010/api/user/1
+content-type: application/json
+
+{
+  "name": "Marcos",
+  "homeTeam": "Curintia"
+}
